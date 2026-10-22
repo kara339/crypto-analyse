@@ -1,0 +1,11 @@
+date_ajout,coin_id,nom,source,rang_a_l_ajout,capitalisation_a_l_ajout,volume_a_l_ajout
+2026-10-22,just,JUST,grosse_capitalisation,72,1118928647,22995355
+2026-10-22,sui,Sui,grosse_capitalisation,29,3993845754,694569239
+2026-10-22,aerodrome-finance,Aerodrome Finance,grosse_capitalisation,92,693333011,51528883
+2026-10-22,peaq-2,peaq,capitalisation_moyenne,295,93264946,2288643
+2026-10-22,proton,XPR Network,capitalisation_moyenne,419,53186495,1264031
+2026-10-22,dog-go-to-the-moon-rune,Dog (Bitcoin),capitalisation_moyenne,292,94801475,624323
+2026-10-22,wormhole,Wormhole,capitalisation_moyenne,304,87075083,29557034
+2026-10-22,aave,Aave,tendance,46,2252209432,226671560
+2026-10-22,onlyagent,OnlyAgent,tendance,845,19693178,57583964
+2026-10-22,dacity-coin-3,Dacity Coin,tendance,804,21077031,10617997
