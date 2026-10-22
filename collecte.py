@@ -6,7 +6,12 @@ import numpy as np
 import pandas as pd
 
 # Ajoute ici les pièces à suivre (identifiants CoinGecko)
-PIECES = ["shiba-inu", "pepe", "dogecoin"]
+def lire_pieces():
+    with open("pieces.txt") as f:
+        return [l.strip() for l in f if l.strip()]
+
+
+PIECES = lire_pieces()
 FICHIER = "data/rapports_quotidiens.csv"
 
 CHAINES = {"ethereum": "1", "binance-smart-chain": "56", "polygon-pos": "137",
@@ -54,10 +59,16 @@ def caracteristiques(d):
     p = d["prix"].values[-31:]
     v = np.nan_to_num(d["volume"].values[-31:])
     rend = np.diff(p) / p[:-1]
-    return {"volatilite_30j": rend.std(),
-            "pire_chute_30j": 1 - (p / np.maximum.accumulate(p)).min(),
-            "var_7j": p[-1] / p[-8] - 1,
-            "var_30j": p[-1] / p[0] - 1}, d
+    c = {}
+    c["volatilite_30j"] = rend.std()
+    c["pire_chute_30j"] = 1 - (p / np.maximum.accumulate(p)).min()
+    c["var_7j"] = p[-1] / p[-8] - 1
+    c["var_30j"] = p[-1] / p[0] - 1
+    c["prix_vs_pic_30j"] = p[-1] / p.max()
+    c["pic_vs_creux_30j"] = p.max() / p.min()
+    c["volume_moyen_30j"] = np.log10(v.mean() + 1)
+    c["tendance_volume"] = v[-7:].mean() / (v.mean() + 1e-9)
+    return c, d
 
 
 def est_brule(h):
@@ -77,6 +88,7 @@ def collecter(coin_id):
              "volume_24h": (m.get("total_volume") or {}).get("usd"),
              "categories": "|".join(c for c in (d.get("categories") or []) if c),
              "natif": not d.get("asset_platform_id")}
+    ligne["prix"] = (m.get("current_price") or {}).get("usd")
     try:
         c, _ = caracteristiques(historique(coin_id))
         if c:
