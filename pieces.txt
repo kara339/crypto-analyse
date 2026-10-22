@@ -1,0 +1,5 @@
+import pandas as pd
+d = pd.read_csv("/content/drive/MyDrive/exemples_sans_stables.csv")
+ids = sorted(d["coin_id"].unique())
+open("/content/pieces.txt", "w").write("\n".join(ids))
+print(len(ids))
