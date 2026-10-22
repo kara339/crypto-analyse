@@ -13,6 +13,20 @@ VOLUME_MIN = 100000
 PAUSE = 10
 REGISTRE = "data/registre_pieces.csv"
 
+CATEGORIES_EXCLUES = []
+CATEGORIES_EXCLUES.append("stablecoins")
+CATEGORIES_EXCLUES.append("tokenized-stock")
+CATEGORIES_EXCLUES.append("xstocks-ecosystem")
+CATEGORIES_EXCLUES.append("tokenized-exchange-traded-funds-etfs")
+CATEGORIES_EXCLUES.append("tokenized-gold")
+CATEGORIES_EXCLUES.append("tokenized-commodities")
+CATEGORIES_EXCLUES.append("tokenized-products")
+
+MOTS_EXCLUS = []
+MOTS_EXCLUS.append("tokenized")
+MOTS_EXCLUS.append("xstock")
+MOTS_EXCLUS.append("-etf")
+
 
 def get_json(url, params=None, essais=4):
     for i in range(essais):
@@ -43,14 +57,35 @@ def marches(page):
     return get_json(BASE + "/coins/markets", p)
 
 
-def ids_stables():
+def ids_categorie(categorie):
     p = {}
     p["vs_currency"] = "usd"
-    p["category"] = "stablecoins"
+    p["category"] = categorie
     p["per_page"] = 250
     p["page"] = 1
     d = get_json(BASE + "/coins/markets", p)
     return set([x["id"] for x in d])
+
+
+def ids_a_exclure():
+    exclus = set()
+    for cat in CATEGORIES_EXCLUES:
+        try:
+            ids = ids_categorie(cat)
+            print("catégorie", cat, ":", len(ids), "pièces exclues")
+            exclus = exclus | ids
+        except Exception as e:
+            print("catégorie", cat, "ignorée :", str(e)[:80])
+        time.sleep(PAUSE)
+    return exclus
+
+
+def mot_interdit(x):
+    nom = x["id"].lower()
+    for m in MOTS_EXCLUS:
+        if m in nom:
+            return True
+    return False
 
 
 def tendance():
@@ -68,6 +103,8 @@ def infos(ids):
 
 def acceptable(x, stables):
     if x["id"] in stables:
+        return False
+    if mot_interdit(x):
         return False
     cap = x.get("market_cap") or 0
     vol = x.get("total_volume") or 0
@@ -108,8 +145,7 @@ def main():
     if place <= 0:
         print("Liste pleine :", len(suivies), "pièces suivies")
         return
-    stables = ids_stables()
-    time.sleep(PAUSE)
+    stables = ids_a_exclure()
     haut = marches(1)
     time.sleep(PAUSE)
     milieu = marches(2) + marches(3)
