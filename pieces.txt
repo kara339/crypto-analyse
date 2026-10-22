@@ -83,3 +83,8 @@ xtcom-token
 yield-guild-games
 zcoin
 zest-protocol
+bitcoin
+dogecoin
+ethereum
+pepe
+shiba-inu
