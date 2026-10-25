@@ -9,3 +9,13 @@ date_ajout,coin_id,nom,source,rang_a_l_ajout,capitalisation_a_l_ajout,volume_a_l
 2026-10-22,aave,Aave,tendance,46,2252209432,226671560
 2026-10-22,onlyagent,OnlyAgent,tendance,845,19693178,57583964
 2026-10-22,dacity-coin-3,Dacity Coin,tendance,804,21077031,10617997
+2026-10-25,hedera-hashgraph,Hedera,grosse_capitalisation,32,3403885321,60946256
+2026-10-25,bitcoin-cash-sv,Bitcoin SV,grosse_capitalisation,129,344295837,6186611
+2026-10-25,vechain,VeChain,grosse_capitalisation,100,572427289,6288258
+2026-10-25,dappos,DAPPOS,capitalisation_moyenne,441,49847072,39235653
+2026-10-25,citrea,Citrea,capitalisation_moyenne,706,25984057,2854748
+2026-10-25,proprietary-trading-network,Vanta Network,capitalisation_moyenne,499,42467450,328732
+2026-10-25,zano,Zano,capitalisation_moyenne,374,64115265,1263575
+2026-10-25,useless-3,Useless Coin,tendance,188,176318430,18986590
+2026-10-25,yellow,Yellow,tendance,383,61865470,1695692
+2026-10-25,quantus,Quantus,tendance,760,23113555,1272998
