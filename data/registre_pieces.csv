@@ -19,3 +19,13 @@ date_ajout,coin_id,nom,source,rang_a_l_ajout,capitalisation_a_l_ajout,volume_a_l
 2026-10-25,useless-3,Useless Coin,tendance,188,176318430,18986590
 2026-10-25,yellow,Yellow,tendance,383,61865470,1695692
 2026-10-25,quantus,Quantus,tendance,760,23113555,1272998
+2026-11-01,kaspa,Kaspa,grosse_capitalisation,76,927809561,7333238
+2026-11-01,flare-networks,Flare,grosse_capitalisation,101,534824666,2053663
+2026-11-01,raydium,Raydium,grosse_capitalisation,116,435791033,10738441
+2026-11-01,sosovalue,SoSoValue,capitalisation_moyenne,267,105719555,2623925
+2026-11-01,banana-for-scale-2,Banana For Scale,capitalisation_moyenne,399,58238565,1108241
+2026-11-01,holotoken,Holo,capitalisation_moyenne,376,63400637,8846507
+2026-11-01,uma,UMA,capitalisation_moyenne,634,32194189,947950
+2026-11-01,solana,Solana,tendance,7,56206205907,1191882358
+2026-11-01,beam-2,Beam,tendance,145,262240074,137283263
+2026-11-01,lighter,Lighter,tendance,82,817391895,117370749
