@@ -29,3 +29,13 @@ date_ajout,coin_id,nom,source,rang_a_l_ajout,capitalisation_a_l_ajout,volume_a_l
 2026-11-01,solana,Solana,tendance,7,56206205907,1191882358
 2026-11-01,beam-2,Beam,tendance,145,262240074,137283263
 2026-11-01,lighter,Lighter,tendance,82,817391895,117370749
+2026-11-08,vaulta,Vaulta,grosse_capitalisation,215,133192123,4140596
+2026-11-08,sky,Sky,grosse_capitalisation,59,1499613011,4111117
+2026-11-08,bittensor,Bittensor,grosse_capitalisation,39,2628016567,41578780
+2026-11-08,bitkub-coin,KUB Coin,capitalisation_moyenne,547,36613369,163573
+2026-11-08,magma-finance,Magma Finance,capitalisation_moyenne,444,48725702,26058800
+2026-11-08,creditcoin-2,Creditcoin,capitalisation_moyenne,473,44600622,653676
+2026-11-08,gohome,GOHOME,capitalisation_moyenne,522,39348514,191185
+2026-11-08,stonk-3,STONK,tendance,413,54594741,15057103
+2026-11-08,kinetiq,Kinetiq,tendance,192,161475797,5877693
+2026-11-08,janction,Janction,tendance,270,104810163,142782673

@@ -118,3 +118,13 @@ uma
 solana
 beam-2
 lighter
+vaulta
+sky
+bittensor
+bitkub-coin
+magma-finance
+creditcoin-2
+gohome
+stonk-3
+kinetiq
+janction
