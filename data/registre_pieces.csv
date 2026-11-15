@@ -39,3 +39,13 @@ date_ajout,coin_id,nom,source,rang_a_l_ajout,capitalisation_a_l_ajout,volume_a_l
 2026-11-08,stonk-3,STONK,tendance,413,54594741,15057103
 2026-11-08,kinetiq,Kinetiq,tendance,192,161475797,5877693
 2026-11-08,janction,Janction,tendance,270,104810163,142782673
+2026-11-15,ape-and-pepe,Ape and Pepe,grosse_capitalisation,138,253703651,12484629
+2026-11-15,rollbit-coin,Rollbit Coin,grosse_capitalisation,244,102851716,404756
+2026-11-15,neo,NEO,grosse_capitalisation,233,110436282,5365064
+2026-11-15,harmony,Harmony,capitalisation_moyenne,744,21123620,15379107
+2026-11-15,dai-on-pulsechain,DAI on PulseChain,capitalisation_moyenne,408,49506980,153564
+2026-11-15,concordium,Concordium,capitalisation_moyenne,470,40983496,267241
+2026-11-15,metal-blockchain,Metal Blockchain,capitalisation_moyenne,390,52645419,508550
+2026-11-15,identity-md,Identity.md,tendance,935,14246295,1201407
+2026-11-15,akedo,Akedo,tendance,143,234955194,150051091
+2026-11-15,arbitrum,Arbitrum,tendance,72,938525054,160198948
