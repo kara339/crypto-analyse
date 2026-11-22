@@ -138,3 +138,13 @@ metal-blockchain
 identity-md
 akedo
 arbitrum
+algorand
+ecash
+worldcoin-wld
+openledger-2
+turbo
+astar
+zelcash
+zcash
+pieverse
+pudgy-penguins

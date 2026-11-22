@@ -49,3 +49,13 @@ date_ajout,coin_id,nom,source,rang_a_l_ajout,capitalisation_a_l_ajout,volume_a_l
 2026-11-15,identity-md,Identity.md,tendance,935,14246295,1201407
 2026-11-15,akedo,Akedo,tendance,143,234955194,150051091
 2026-11-15,arbitrum,Arbitrum,tendance,72,938525054,160198948
+2026-11-22,algorand,Algorand,grosse_capitalisation,84,680912918,22057687
+2026-11-22,ecash,eCash,grosse_capitalisation,238,101877233,2073533
+2026-11-22,worldcoin-wld,Worldcoin,grosse_capitalisation,70,888330980,98009337
+2026-11-22,openledger-2,OpenLedger,capitalisation_moyenne,596,27358717,2900224
+2026-11-22,turbo,Turbo,capitalisation_moyenne,475,37670905,4159397
+2026-11-22,astar,Astar,capitalisation_moyenne,470,37963575,593401
+2026-11-22,zelcash,Flux,capitalisation_moyenne,735,20153328,990232
+2026-11-22,zcash,Zcash,tendance,11,13485831731,670643769
+2026-11-22,pieverse,Pieverse,tendance,70,894105072,206178130
+2026-11-22,pudgy-penguins,Pudgy Penguins,tendance,130,270626460,51674701
